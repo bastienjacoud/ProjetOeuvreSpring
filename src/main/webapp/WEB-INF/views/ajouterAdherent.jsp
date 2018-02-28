@@ -1,39 +1,42 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Ajouter un  adhérent</title>
-</head>
-<SCRIPT language="Javascript" type="text/javascript">
-<script type="text/javascript" src="js/foncControle.js"></script>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
+<t:layout>
+	<jsp:attribute name="head">
+		<title>Ajouter un Adhérent</title>
+	</jsp:attribute>
 
-<body>
-	<H1> Ajout d'un adhérent </H1> 
+	<jsp:attribute name="scripts">
+		<script type="text/javascript" src="js/fonctControle.js"></script>
+	</jsp:attribute>
 
-<DIV align="center">
-<FORM  name='identification' method="post" action="insererAdherent.htm" onsubmit="return teste()">
-     <P align="left"><FONT face="Arial" color="#004080"></FONT>     
-		<FONT face="Arial" color="#004080"> <BR>&nbsp;  &nbsp;  &nbsp; Nom de l'adherent : </FONT>
-	    <INPUT type="text" name="txtnom" value=""  id ="nom"> <BR>
-        <FONT face="Arial" color="#004080">
-		<BR>Prenom de l'adherent : </FONT>
-        <INPUT type="text" name="txtprenom"  id ="prenom"  > <BR>
-        
-        <FONT face="Arial" color="#004080"> <BR>&nbsp;  &nbsp;  &nbsp; Ville de l'adherent :</FONT>
-        <INPUT type="text" name="txtville" id ="ville">
-        <FONT face="Arial" color="#004080">	<BR></FONT><BR>
-        
-          <!-- Boutons Ajouter -->
-          
-        <INPUT type="submit" name="bt"  value="Ajouter" >
-        <FONT face="Arial" color="#004080"></FONT>
-        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      
-</P></FORM>
-</DIV>
-<BR>
-</body>
-</html>
+	<jsp:body>
+		<div class="row">
+			<div class="col-xs-2">
+				<t:arrow></t:arrow>
+			</div>
+			<div class="col-xs-8">
+				<h2 class="center">
+					Ajout d'un adhérent
+				</h2>
+			</div>
+		</div>
+
+		<br /> 
+
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<form  name='identification' method="post" action="Controleur?action=insererAdherent" onsubmit="return teste()">
+					<t:adhform>
+					</t:adhform>
+					<div class="row">
+						<div class="col-xs-4 col-xs-offset-4">
+							<!-- Boutons Ajouter -->
+							<input type="submit" name="bt" class="btn btn-info btn-lg" value="Ajouter" />
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</jsp:body>
+</t:layout>
