@@ -8,10 +8,10 @@
 		<script src="js/jQuery.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/custom.js"></script>
-		<link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="resources/css/bootstrap-grid.min.css.css" />
-		<link rel="stylesheet" type="text/css" href="resources/css/bootstrap-reboot.min.css" />
-		<link rel="stylesheet" type="text/css" href="resources/css/custom.css">
+		<link rel="stylesheet" type="text/css" href="/WEB-INF/resources/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="/WEB-INF/resources/css/bootstrap-grid.min.css.css" />
+		<link rel="stylesheet" type="text/css" href="/WEB-INF/resources/css/bootstrap-reboot.min.css" />
+		<link rel="stylesheet" type="text/css" href="/WEB-INF/resources/css/custom.css">
 	</head>
 
 	<jsp:invoke fragment="scripts"/>
