@@ -1,0 +1,158 @@
+.center, .tableCenter * * {
+	text-align: center;
+	align-self: center;
+}
+
+.blue {
+	color: #2C8DDB;
+}
+
+.blue:hover {
+	color: #2196F3;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+body {
+	font-size: 20px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+label {
+	padding-bottom: 15px;
+	font-weight: normal;
+}
+
+.btn-info {
+	background-color: #2C8DDB;
+}
+
+.btn-info:hover {
+	background-color: #2196F3;
+}
+
+.navicon {
+	font-size: 28px;
+}
+
+/* Panels
+ * Define different pan's color
+ */
+/* GLOBAL */
+.panels div {
+	padding: 10px;
+}
+
+.panels div a {
+	text-decoration: none;
+}
+
+.pan {
+	color: white;
+	border-radius: 10px;
+	height: 100px;
+	max-width: 300px;
+	align-self: center;
+}
+
+.pan * {
+	text-align: center;
+}
+
+.btn-info {
+	background-color: #2C8DDB;
+}
+
+/* Panels
+ * Define differents pan's color
+ */
+/* GLOBAL */
+.panels div {
+	padding: 10px;
+}
+
+.panels div a {
+	text-decoration: none;
+}
+
+.pan-link {
+	height: 100%;
+}
+
+.pan {
+	color: white;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	height: 120px;
+	max-width: 300px;
+	min-width: 150px;
+	align-self: center;
+	position: relative;
+}
+
+.pan * {
+	text-align: center;
+	display: block;
+}
+
+.pan-body span {
+	padding-top: 10px;
+	margin-bottom: 10px;
+	font-size: 40px;
+	align-self: center;
+}
+
+.pan-footer {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+	align-self: center;
+}
+
+/* GREEN */
+.pan-green {
+	background-color: #00E676;
+}
+
+.pan-green:hover {
+	background-color: #00C853;
+}
+
+/* BLUE */
+.pan-blue {
+	background-color: #448AFF;
+}
+
+.pan-blue:hover {
+	background-color: #2962FF;
+}
+
+/* RED */
+.pan-red {
+	background-color: #F44336;
+}
+
+.pan-red:hover {
+	background-color: #D32F2F;
+}
+
+/* Same Height columns */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
