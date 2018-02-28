@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="t" tagdir="/WEB-INF/resources/tags" %>
 
 <t:layout>
 	<jsp:attribute name="head">
@@ -7,7 +7,7 @@
 	</jsp:attribute>
 
 	<jsp:attribute name="scripts">
-		<script type="text/javascript" src="js/fonctControle.js"></script>
+		<script type="text/javascript" src="/WEB-INF/resources/js/fonctControle.js"></script>
 	</jsp:attribute>
 
 	<jsp:body>
