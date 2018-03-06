@@ -2,16 +2,19 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
+<html xmlns:c="http://java.sun.com/jsp/jstl/core"
+xmlns:fmt="http://java.sun.com/jsp/jstl/fmt">
 
 <t:layout>
 	<jsp:attribute name="head">
 		<title>Modifier une oeuvre</title>
 	</jsp:attribute>
 
-	<jsp:attribute name="scripts">
-		<script language="Javascript" type="text/javascript"></script>
-		<script type="text/javascript" src="/WEB-INF/resources/js/foncControle.js"></script>
-	</jsp:attribute>
+		<jsp:attribute name="scripts">
+			<script language="Javascript" type="text/javascript"></script>
+			<script type="text/javascript" src="/resources/js/foncControle.js"></script>
+		</jsp:attribute>
 
 
 	<jsp:body>
