@@ -2,7 +2,6 @@ package com.epul.oeuvres.dao;
 
 import com.epul.oeuvres.meserreurs.MonException;
 import com.epul.oeuvres.metier.Oeuvrevente;
-import com.epul.oeuvres.metier.Proprietaire;
 import com.epul.oeuvres.persistance.DialogueBd;
 
 import java.util.ArrayList;

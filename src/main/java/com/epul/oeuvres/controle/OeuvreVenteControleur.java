@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 // des pages JSP
 
 @Controller
-public class OeuvreControleur {
+public class OeuvreVenteControleur {
 
     private static final Logger logger = LoggerFactory.getLogger(MultiControleur.class);
 

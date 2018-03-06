@@ -11,7 +11,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -30,7 +29,7 @@ public class ReservationControleur {
 
     @RequestMapping(value = "reserverMenu.htm")
     public ModelAndView reserverMenu(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        String destinationPage = "";
+        String destinationPage;
         try {
             AdherentService adherentService = new AdherentService();
             OeuvreVenteService oeuvreVenteService = new OeuvreVenteService();
@@ -45,7 +44,8 @@ public class ReservationControleur {
             // on renvoi l'oeuvre pour initialiser les champs du formulaire
             request.setAttribute("oeuvre", oeuvrevente);
         } catch (MonException e) {
-            e.printStackTrace();
+            request.setAttribute("MesErreurs", e.getMessage());
+            destinationPage = "Erreur";
         }
         destinationPage = "reserverOeuvre";
         return new ModelAndView(destinationPage);
@@ -53,7 +53,7 @@ public class ReservationControleur {
 
     @RequestMapping(value = "reserverOeuvre.htm")
     public ModelAndView reserverOeuvre(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        String destinationPage = "";
+        String destinationPage;
         try {
             AdherentService adherentService = new AdherentService();
             OeuvreVenteService oeuvreVenteService = new OeuvreVenteService();
@@ -87,8 +87,8 @@ public class ReservationControleur {
                 e.printStackTrace();
             }
         } catch (MonException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            request.setAttribute("MesErreurs", e.getMessage());
+            destinationPage = "Erreur";
         }
         destinationPage = "forward:/listerOeuvre.htm";
         return new ModelAndView(destinationPage);

@@ -1,17 +1,17 @@
 package com.epul.oeuvres.controle;
 
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import com.epul.oeuvres.dao.AdherentService;
+import com.epul.oeuvres.meserreurs.MonException;
+import com.epul.oeuvres.metier.Adherent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import com.epul.oeuvres.meserreurs.*;
-import com.epul.oeuvres.metier.*;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 // Les méthodes du contrôleur répondent à des sollicitations
 // des pages JSP
@@ -32,15 +32,13 @@ public class AdherentControleur {
         } catch (MonException e) {
             request.setAttribute("MesErreurs", e.getMessage());
             destinationPage = "Erreur";
-
         }
         return new ModelAndView(destinationPage);
     }
 
     @RequestMapping(value = "insererAdherent.htm")
     public ModelAndView insererAdherent(HttpServletRequest request, HttpServletResponse response) throws Exception {
-
-        String destinationPage = "";
+        String destinationPage;
         try {
             Adherent unAdherent = new Adherent();
             unAdherent.setNomAdherent(request.getParameter("txtnom"));
@@ -58,15 +56,13 @@ public class AdherentControleur {
 
     @RequestMapping(value = "ajouterAdherent.htm")
     public ModelAndView ajouterAdherent(HttpServletRequest request, HttpServletResponse response) throws Exception {
-
-        String destinationPage = "";
+        String destinationPage;
         try {
             destinationPage = "ajouterAdherent";
         } catch (Exception e) {
             request.setAttribute("MesErreurs", e.getMessage());
             destinationPage = "Erreur";
         }
-
         return new ModelAndView(destinationPage);
     }
 }

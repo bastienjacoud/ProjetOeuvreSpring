@@ -1,52 +1,52 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html xmlns:c="http://java.sun.com/jsp/jstl/core"
-	  xmlns:fmt="http://java.sun.com/jsp/jstl/fmt">
+      xmlns:fmt="http://java.sun.com/jsp/jstl/fmt">
 
-	<t:layout>
+<t:layout>
 		<jsp:attribute name="head">
 			<title>Affichage des Adhérents</title>
 		</jsp:attribute>
 
-		<jsp:attribute name="scripts">
+    <jsp:attribute name="scripts">
 		</jsp:attribute>
 
-		<jsp:body>
-			<div class="row">
-				<div class="col-xs-2">
-					<t:arrow></t:arrow>
-				</div>
-				<div class="col-xs-8">
-					<h2 class="center">
-						Listing des Adhérents
-					</h2>
-				</div>
-			</div>
+    <jsp:body>
+        <div class="row">
+            <div class="col-xs-2">
+                <t:arrow></t:arrow>
+            </div>
+            <div class="col-xs-8">
+                <h2 class="center">
+                    Listing des Adhérents
+                </h2>
+            </div>
+        </div>
 
-			<br />
+        <br/>
 
-			<div class="row">
-				<table class="table tableCenter">
-					<tr>
-						<th>Numero</th>
-						<th>Nom</th>
-						<th>Prénom</th>
-						<th>Ville</th>
+        <div class="row">
+            <table class="table tableCenter">
+                <tr>
+                    <th>Numero</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Ville</th>
 
-					</tr>
+                </tr>
 
-					<c:forEach items="${mesAdherents}" var="item">
-						<tr>
-							<td>${item.idAdherent}</td>
-							<td>${item.nomAdherent}</td>
-							<td>${item.prenomAdherent}</td>
-							<td>${item.villeAdherent}</td>
-						</tr>
-					</c:forEach>
-				</table>
-			</div>
-		</jsp:body>
-	</t:layout>
+                <c:forEach items="${mesAdherents}" var="item">
+                    <tr>
+                        <td>${item.idAdherent}</td>
+                        <td>${item.nomAdherent}</td>
+                        <td>${item.prenomAdherent}</td>
+                        <td>${item.villeAdherent}</td>
+                    </tr>
+                </c:forEach>
+            </table>
+        </div>
+    </jsp:body>
+</t:layout>
 </html>
