@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="t" tagdir="/WEB-INF/resources/tags" %>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:layout>
 	<jsp:attribute name="head">
@@ -7,7 +7,7 @@
 	</jsp:attribute>
 
 	<jsp:attribute name="scripts">
-		<script type="text/javascript" src="/WEB-INF/resources/js/fonctControle.js"></script>
+		<script type="text/javascript" src="/resources/js/fonctControle.js"></script>
 	</jsp:attribute>
 
 	<jsp:body>
@@ -26,7 +26,7 @@
 
 		<div class="row">
 			<div class="col-sm-10 col-sm-offset-1">
-				<form  name='identification' method="post" action="Controleur?action=insererAdherent" onsubmit="return teste()">
+				<form  name='identification' method="post" action="insererAdherent.htm" onsubmit="return teste()">
 					<t:adhform>
 					</t:adhform>
 					<div class="row">

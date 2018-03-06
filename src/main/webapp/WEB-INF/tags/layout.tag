@@ -5,9 +5,9 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<jsp:invoke fragment="head"/>
-		<script src="js/jQuery.js"></script>
-		<script src="js/bootstrap.js"></script>
-		<script src="js/custom.js"></script>
+		<script src="resources/js/jQuery.js"></script>
+		<script src="resources/js/bootstrap.js"></script>
+		<script src="resources/js/custom.js"></script>
 		<link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="resources/css/bootstrap-grid.min.css.css" />
 		<link rel="stylesheet" type="text/css" href="resources/css/bootstrap-reboot.min.css" />
