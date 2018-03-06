@@ -1,11 +1,11 @@
-package persistance;
+package com.epul.oeuvres.persistance;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import meserreurs.*;
+import com.epul.oeuvres.meserreurs.*;
 
 public class DialogueBd {
 

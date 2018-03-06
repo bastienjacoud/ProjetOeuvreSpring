@@ -1,4 +1,4 @@
-package utilitaires;
+package com.epul.oeuvres.utilitaires;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -6,7 +6,7 @@ import java.util.*;
 public class FonctionsUtiles {
 
 	// /
-	// / Conversion d'une date en chaï¿½ne
+	// / Conversion d'une date en chaîne
 	// /
 	public static String DateToString(Date dt, String modeleEntree)  {
 	
@@ -25,11 +25,11 @@ public class FonctionsUtiles {
 	}
 
 	public static String conversionDateenChaine(Date unedate, String modele)
-	// le modï¿½let est une combinaison de MM dd yyyy avec / ou ï¿½
+	// le modèlet est une combinaison de MM dd yyyy avec / ou –
 	// exemple dd/MM/yyyy
 			throws Exception {
 		String datesortie = "";
-		// on dï¿½finit un format de sortie
+		// on définit un format de sortie
 		SimpleDateFormat defFormat = new SimpleDateFormat(modele);
 		datesortie = defFormat.format(unedate);
 		return datesortie;
@@ -39,7 +39,7 @@ public class FonctionsUtiles {
 	public static Date conversionChaineenDate(String unedate, String unformat)
 			throws Exception {
 		Date datesortie;
-		// on dï¿½finit un format de sortie
+		// on définit un format de sortie
 		SimpleDateFormat defFormat = new SimpleDateFormat(unformat);
 		datesortie = defFormat.parse(unedate);
 		return datesortie;

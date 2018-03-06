@@ -1,4 +1,4 @@
-package controle;
+package com.epul.oeuvres.controle;
 
 
 import javax.servlet.http.HttpServletRequest;
@@ -8,12 +8,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-import dao.Service;
-import meserreurs.*;
-import metier.*;
+import com.epul.oeuvres.dao.Service;
+import com.epul.oeuvres.meserreurs.*;
+import com.epul.oeuvres.metier.*;
 
 ///
-/// Les mï¿½thode du contrï¿½leur rï¿½pondent ï¿½ des sollicitations
+/// Les méthode du contrôleur répondent à des sollicitations
 /// des pages JSP
 
 @Controller

@@ -8,10 +8,10 @@
 		<script src="js/jQuery.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/custom.js"></script>
-		<link rel="stylesheet" type="text/css" href="/WEB-INF/resources/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="/WEB-INF/resources/css/bootstrap-grid.min.css.css" />
-		<link rel="stylesheet" type="text/css" href="/WEB-INF/resources/css/bootstrap-reboot.min.css" />
-		<link rel="stylesheet" type="text/css" href="/WEB-INF/resources/css/custom.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="resources/css/bootstrap-grid.min.css.css" />
+		<link rel="stylesheet" type="text/css" href="resources/css/bootstrap-reboot.min.css" />
+		<link rel="stylesheet" type="text/css" href="resources/css/custom.css">
 	</head>
 
 	<jsp:invoke fragment="scripts"/>
@@ -20,7 +20,7 @@
 		<div class="container" style="margin-top: 15px;">
 			<div class="row">
 				<div class="col-xs-8 col-xs-offset-2 center">
-					<img class="col-xs-6 col-xs-offset-3 col-md-2 col-md-offset-0" style="vertical-align: middle;" src="img/polytech.png">
+					<img class="col-xs-6 col-xs-offset-3 col-md-2 col-md-offset-0" style="vertical-align: middle;" src="resources/img/polytech.png">
 					<h1 class="blue col-xs-12 col-md-10">Médiathèque de POLYTECH</h1>
 				</div>
 			</div>

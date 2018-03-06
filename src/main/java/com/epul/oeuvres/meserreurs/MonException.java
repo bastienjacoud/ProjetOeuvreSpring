@@ -1,4 +1,4 @@
-package meserreurs;
+package com.epul.oeuvres.meserreurs;
 
 public class MonException  extends Exception  {
     private String message;

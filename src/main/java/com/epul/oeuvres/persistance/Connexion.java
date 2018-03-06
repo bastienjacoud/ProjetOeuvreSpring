@@ -1,10 +1,10 @@
-package persistance;
+package com.epul.oeuvres.persistance;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
-import meserreurs.MonException;
+import com.epul.oeuvres.meserreurs.MonException;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -20,8 +20,8 @@ public class Connexion {
 		return instance;
 	}
 
-	// on rend le constructeur privï¿½
-	// pour empï¿½cher toute crï¿½ation d'instance
+	// on rend le constructeur privé
+	// pour empêcher toute création d'instance
 	private Connexion() {
 	}
 
@@ -29,7 +29,7 @@ public class Connexion {
 		Connection conn = null;
 		try {
 			Context ctxt = new InitialContext();
-			// On rï¿½cupï¿½re l'environnement
+			// On récupère l'environnement
 			Context envCtx = (Context) ctxt.lookup("java:comp/env");
 			// On recherche la data source
 			DataSource ds = (DataSource) envCtx.lookup("jdbc/DSOeuvre");

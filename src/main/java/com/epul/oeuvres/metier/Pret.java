@@ -1,4 +1,4 @@
-package metier;
+package com.epul.oeuvres.metier;
 
 import java.io.Serializable;
 import java.util.Date;
