@@ -33,4 +33,24 @@ public class MultiControleurOeuvre {
 
         return new ModelAndView(destinationPage);
     }
+
+    @RequestMapping(value = "insererOeuvre.htm")
+    public ModelAndView insererOeuvre(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+        String destinationPage = "";
+        try {
+            Service unService = new Service();
+            Oeuvrevente oeuvrevente = new Oeuvrevente();
+            oeuvrevente.setTitreOeuvrevente(request.getParameter("titre"));
+            oeuvrevente.setEtatOeuvrevente("L");
+            oeuvrevente.setPrixOeuvrevente(Integer.valueOf(request.getParameter("prix")));
+            oeuvrevente.setProprietaire(unService.rechercherProprietaire(Integer.valueOf(request.getParameter("idProprietaire"))));
+            unService.insertOeuvreVente(oeuvrevente);
+        } catch (Exception e) {
+            request.setAttribute("MesErreurs", e.getMessage());
+            destinationPage = "Erreur";
+        }
+        destinationPage = "home";
+        return new ModelAndView(destinationPage);
+    }
 }

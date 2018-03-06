@@ -28,7 +28,7 @@
 
             <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
-                    <form name='ajouterOeuvre' method="post" action="Controleur?action=insererOeuvre">
+                    <form name='ajouterOeuvre' method="post" action="insererOeuvre.htm">
                         <div class="row">
                             <div class="col-xs-4">
                                 <label for="titre">Titre de l'oeuvre </label>
