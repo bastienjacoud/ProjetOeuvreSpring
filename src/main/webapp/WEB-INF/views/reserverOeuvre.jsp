@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="t" tagdir="/WEB-INF/resources/tags" %>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:layout>
 	<jsp:attribute name="head">
@@ -25,7 +25,7 @@
 		</div>
 
 		<div class="row" style="text-align: left">
-			<form name='reservation' method="post" action="Controleur?action=reserverOeuvre">
+			<form name='reservation' method="post" action="reserverOeuvre.htm">
 				<!-- Champ caché -->
 				<input type="hidden" name="idOeuvre" value="${oeuvre.idOeuvrevente}">
 
@@ -88,7 +88,7 @@
 						<input class="btn btn-primary" type="submit" name="bt" value="Réserver" />
 					</div>
 					<div class="col-xs-4 col-xs-offset-2">
-						<a class="btn btn-light btn-lg" href="Controleur?action=listerOeuvre">Annuler</a>
+						<a class="btn btn-light btn-lg" href="listerOeuvre.htm">Annuler</a>
 					</div>
 				</div>
 			 </form>

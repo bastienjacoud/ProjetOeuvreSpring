@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<%@ taglib prefix="t" tagdir="/WEB-INF/resources/tags" %>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:layout>
 	<jsp:attribute name="head">
@@ -60,12 +60,12 @@
 							${item.proprietaire.nomProprietaire}
 						</td>
 						<td>
-							<a href="Controleur?action=reserverMenu&idOeuvre=${item.idOeuvrevente}">
+							<a href="reserverMenu.htm?idOeuvre=${item.idOeuvrevente}">
 								<input type="button" class="btn btn-info btn-lg" value="Réserver" />
 							</a>
 							&nbsp;
 							&nbsp;
-							<a href="Controleur?action=form_modifierOeuvre&idOeuvre=${item.idOeuvrevente}">
+							<a href="form_modifierOeuvre.htm?idOeuvre=${item.idOeuvrevente}">
 								<input type="button" class="btn btn-info btn-lg" value="Modifier" />
 							</a>
 						</td>

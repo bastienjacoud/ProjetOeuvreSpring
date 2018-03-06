@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<%@ taglib prefix="t" tagdir="/WEB-INF/resources/tags" %>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:layout>
 	<jsp:attribute name="head">
@@ -24,7 +24,7 @@
 		</div>
 
 		<div class="row center" style="text-align: left">
-			<form name='identification' method="post" action="Controleur?action=modifierOeuvre" onsubmit="return testeOeuvre()">
+			<form name='identification' method="post" action="modifierOeuvre.htm" onsubmit="return testeOeuvre()">
 				<div class="col-xs-10 col-xs-offset-1">
 					<!-- Champ caché -->
 					<input type="hidden" name="idOeuvre" value="${oeuvre.idOeuvrevente}">
@@ -74,7 +74,7 @@
 							<input type="submit" name="bt" class="btn btn-info btn-lg" value="Ajouter" />
 						</div>
 						<div class="col-xs-4 col-xs-offset-2">
-							<a class="btn btn-light btn-lg" href="Controleur?action=listerOeuvre">Annuler</a>
+							<a class="btn btn-light btn-lg" href="listerOeuvre.htm">Annuler</a>
 						</div>
 					</div>
 				</div>
