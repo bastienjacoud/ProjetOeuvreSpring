@@ -53,7 +53,7 @@
 				</a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-3">
-				<a href="Controleur?action=listerOeuvre">
+				<a href="listerOeuvre.htm">
 					<div class="pan pan-blue">
 						<div class="pan-body"><span class="glyphicon glyphicon-duplicate"></span></div>
 						<div class="pan-footer">Lister les Oeuvres en vente</div>
